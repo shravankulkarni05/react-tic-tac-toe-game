@@ -1,0 +1,206 @@
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.game-header h1 {
+  color: #444;
+  font-size: 4em;
+  margin: 5px auto;
+  text-align: center;
+  font-family: "Pacifico", serif;
+}
+
+.game-footer {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.game-footer .reset-game-btn {
+  font-family: "Lato";
+  font-size: 16px;
+  outline: 0;
+  border: transparent;
+  background: #9dabc0;
+  color: #fff;
+  padding: 10px 63px;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 0px 10px 15px rgba(55, 84, 170, 0.25);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.game-footer .reset-game-btn:hover {
+  background-color: #f1f3f6;
+  color: #444;
+  border: 1px solid #444;
+}
+
+.container {
+  left: 50%;
+  top: 50%;
+}
+
+.turn {
+  text-align: center;
+  font-family: "Lato";
+  margin-bottom: 15px;
+}
+
+.turn .active-turn {
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.turn .turn-txt {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container .box {
+  position: relative;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
+  width: 22em;
+  height: 22em;
+  background: #f1f3f6;
+  border-radius: 20px;
+  box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px white, inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+
+.row {
+  float: left;
+}
+
+.square {
+  color: #444;
+  background-color: #f1f3f6;
+  border-color: #c3c3c3;
+  width: 115px;
+  height: 115px;
+  float: left;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.row:first-child .square {
+  border-top: 0;
+}
+
+.square:last-child {
+  border-right: 0px;
+}
+
+.square .mark {
+  font-size: 2.5em;
+  vertical-align: middle;
+  line-height: 3em;
+}
+
+.mark-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.x-marker {
+  color: #e83a3a;
+}
+
+.o-marker {
+  color: #14bdac;
+}
+
+.game-result {
+  text-align: center;
+  padding: 115px 0;
+  font-size: 3em;
+}
+
+.game-result .result {
+  color: #444;
+  font-family: "Lato";
+}
+
+.game-result.draw .x-marker {
+  margin-right: 5px;
+}
+
+/* Strike through lines */
+.strike-through {
+  border-bottom: 4px solid #444;
+  position: absolute;
+  height: 1px;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+  width: 90%;
+  margin-left: 15px;
+}
+
+.row-1 {
+  margin-top: 16%;
+}
+
+.row-2 {
+  margin-top: 49%;
+}
+
+.row-3 {
+  margin-top: 82%;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  width: 90%;
+  margin-top: 50%;
+  transform: rotate(90deg);
+}
+
+.col-1 {
+  margin-left: -28.5%;
+}
+
+.col-2 {
+  margin-left: 16px;
+}
+
+.col-3 {
+  margin-left: 37.5%;
+}
+
+.diag-1,
+.diag-2 {
+  margin-top: 50%;
+  width: 410px;
+}
+
+.diag-1 {
+  margin-left: -10%;
+  transform: rotate(-45deg);
+}
+
+.diag-2 {
+  margin-left: -8%;
+  transform: rotate(45deg);
+}
+
+.confetti {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  pointer-events: none;
+  top: 0;
+}
+
+.hide {
+  display: none;
+}
